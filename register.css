@@ -1,0 +1,158 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: sans-serif;
+    display: flex;
+    flex-direction: column; /* Set the main axis as a column */
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-color: pink;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  
+  .Navbar {
+    width: 100%;
+    height: 20%;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    box-sizing: border-box;
+    background-color: rgb(48, 48, 155);
+    box-shadow: 5px -5px 5px 5px rgba(64, 0, 64, 0.35);
+    float: left;
+    margin-bottom: 100px;
+    top: 0;
+  }
+  
+  .form {
+    background: black;
+    opacity: 10;
+    padding: 20px 15px;
+    min-height: 250px;
+    border-radius: 2.5%;
+    /* Add margin to separate the navbar and form */
+  }
+  
+  input {
+    display: block;
+    outline: none;
+    padding: 15px 10px;
+    margin: 30px;
+    border: solid 1px transparent;
+    background: none;
+    color: royalblue;
+    width: 200px;
+    transition: border-color 1s;
+  }
+  
+  input:focus {
+    border-color: pink;
+  }
+  
+  .form button {
+    padding: 10px;
+    color: pink;
+    background: royalblue;
+    border: none;
+    width: 200px;
+    margin-left: 30px;
+    transition: 0.2s;
+    cursor: pointer;
+    transition: all 0.4s ease;
+  }
+  .form button:hover {
+    background: pink;
+    color: royalblue;
+    transition: all 0.4s ease;
+  }
+  
+  .action {
+    color: pink;
+    text-align: center;
+    font-size: 18px;
+    margin: 30px;
+    text-transform: uppercase;
+    font-weight: bold;
+  }
+  .load {
+    position: relative;
+    margin: 2px 5px;
+    padding-bottom: 5px;
+    border-bottom: solid 2px transparent;
+    cursor: pointer;
+    transition: 0.5s;
+  }
+  .load.show {
+    border-bottom-color: royalblue;
+  }
+  
+  .form a {
+    color: white;
+    text-decoration: none;
+    display: block;
+    margin: 15px;
+    text-align: center;
+    transition: 0.5s;
+  }
+  .form a:hover {
+    color: pink;
+  }
+  
+  .login {
+    display: none;
+  }
+  .reg {
+    display: none;
+  }
+  
+  .show-page {
+    display: block;
+    animation: show-page 1s;
+  }
+  
+  @keyframes show-page {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+
+  @media (max-width: 700px) {
+    ul{
+        display: flex;
+        flex-direction: column;
+    }
+
+}
+
+.link{
+    color: royalblue;
+    text-decoration: underline;
+    display: block;
+    margin: 15px;
+    text-align: center;
+    transition: 0.5s;
+    font-size: 12px;
+    
+}
+
+.link a{
+  color: royalblue;
+}
+
+.link a:hover {
+  color: pink;
+  text-decoration: underline;
+  cursor: pointer;
+}
+

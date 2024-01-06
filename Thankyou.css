@@ -1,0 +1,275 @@
+*{
+     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+body{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: black;
+
+}
+
+.text-container h1{
+    color: white;
+    font-size: 200px;
+    font-weight: 900;
+    text-align: center;
+    text-transform: uppercase;
+    line-height: 80px; 
+    letter-spacing: 2px;
+    
+}
+
+.text-container .animated-text{
+    position: relative;
+    background: plum;
+    overflow: hidden;
+    margin-top: 2px;
+    width: 1000px;
+    height: 120px;
+    box-shadow: 0 0 10px rgb(226, 183, 226),
+                0 0 120px rgb(226, 183, 226) ;
+   
+
+   
+}
+ 
+.text-container .animated-text::before{
+    content:'';
+    background: rgba(255, 255, 255, 0.1);
+    position: absolute;
+    width: 55%;
+    height: 100%;
+    transform: skew(35deg) translateX(-20px);
+
+}
+
+.text-container .animated-text h2{
+    color: azure;
+    font-size: 45px;
+    text-transform: uppercase;
+    text-align: center;
+    
+}
+
+.text-container .animated-text h2:nth-child(1){
+    animation: text-move 30s  infinite;
+}
+@keyframes text-move{
+    0%, 100%{
+        margin-top: 0;
+    }
+    10%{
+        margin-top: -85px;
+    }
+
+    20%{
+        margin-top: -170px;
+    }
+
+    30%{
+        margin-top: -255px;
+    }
+
+    40%{
+        margin-top: -340px;
+    }
+
+    50%{
+        margin-top: -425px;
+    }
+
+    60%{
+        margin-top: -510px;
+    }
+
+    70%{
+        margin-top: -595px;
+    }
+
+    80%{
+        margin-top: -680-px;
+    }
+
+    90%{
+        margin-top: -775px;
+    }
+
+
+}
+
+.animation-container{
+	z-index: 999;
+	position: absolute;
+	width: 50%;
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.burst{
+	position: absolute;
+}
+
+.burst .line{
+	position: absolute;
+	background: #fff;
+	width: 10px;
+	height: 50px;
+}
+
+.burst .line:nth-child(1){
+	animation: move01 2s linear infinite;
+}
+
+@keyframes move01{
+	0%{
+		transform: translate(0, 0);
+		opacity: 0;
+	}
+	50%{
+		transform: translate(0, -50px);
+		opacity: 0.5;
+	}
+	100%{
+		transform: translate(0, -100px);
+		opacity: 0;
+	}
+}
+
+.burst .line:nth-child(2){
+	animation: move02 2s linear infinite;
+}
+
+@keyframes move02{
+	0%{
+		transform: rotate(45deg) translate(0, 0);
+		opacity: 0;
+	}
+	50%{
+		transform: rotate(45deg) translate(0, -50px);
+		opacity: 1;
+	}
+	100%{
+		transform: rotate(45deg) translate(0, -100px);
+		opacity: 0;
+	}
+}
+
+.burst .line:nth-child(3){
+	animation: move03 2s linear infinite;
+}
+
+@keyframes move03{
+	0%{
+		transform: rotate(90deg) translate(0, 0);
+		opacity: 0;
+	}
+	50%{
+		transform: rotate(90deg) translate(0, -50px);
+		opacity: 1;
+	}
+	100%{
+		transform: rotate(90deg) translate(0, -100px);
+		opacity: 0;
+	}
+}
+
+.burst .line:nth-child(4){
+	animation: move04 2s linear infinite;
+}
+
+@keyframes move04{
+	0%{
+		transform: rotate(135deg) translate(0, 0);
+		opacity: 0;
+	}
+	50%{
+		transform: rotate(135deg) translate(0, -50px);
+		opacity: 1;
+	}
+	100%{
+		transform: rotate(135deg) translate(0, -100px);
+		opacity: 0;
+	}
+}
+
+.burst .line:nth-child(5){
+	animation: move05 2s linear infinite;
+}
+
+@keyframes move05{
+	0%{
+		transform: rotate(180deg) translate(0, 0);
+		opacity: 0;
+	}
+	50%{
+		transform: rotate(180deg) translate(0, -50px);
+		opacity: 1;
+	}
+	100%{
+		transform: rotate(180deg) translate(0, -100px);
+		opacity: 0;
+	}
+}
+
+.burst .line:nth-child(6){
+	animation: move06 2s linear infinite;
+}
+
+@keyframes move06{
+	0%{
+		transform: rotate(225deg) translate(0, 0);
+		opacity: 0;
+	}
+	50%{
+		transform: rotate(225deg) translate(0, -50px);
+		opacity: 1;
+	}
+	100%{
+		transform: rotate(225deg) translate(0, -100px);
+		opacity: 0;
+	}
+}
+
+.burst .line:nth-child(7){
+	animation: move07 2s linear infinite;
+}
+
+@keyframes move07{
+	0%{
+		transform: rotate(270deg) translate(0, 0);
+		opacity: 0;
+	}
+	50%{
+		transform: rotate(270deg) translate(0, -50px);
+		opacity: 1;
+	}
+	100%{
+		transform: rotate(270deg) translate(0, -100px);
+		opacity: 0;
+	}
+}
+
+.burst .line:nth-child(8){
+	animation: move08 2s linear infinite;
+}
+
+@keyframes move08{
+	0%{
+		transform: rotate(315deg) translate(0, 0);
+		opacity: 0;
+	}
+	50%{
+		transform: rotate(315deg) translate(0, -50px);
+		opacity: 1;
+	}
+	100%{
+		transform: rotate(315deg) translate(0, -100px);
+		opacity: 0;
+	}
+}
+      
